@@ -1,0 +1,3 @@
+    STRPGMEXP PGMLVL(*Current);
+        EXPORT SYMBOL('PRENTRADA');
+    ENDPGMEXP
