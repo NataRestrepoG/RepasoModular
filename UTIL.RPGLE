@@ -1,4 +1,6 @@
 **free
+    ctl-opt Copyright('Bancolombia - Natalia Restrepo Gutierrez');
+    ctl-opt nomain;
 
     /copy COPY
 
@@ -13,7 +15,7 @@
 
         //- Process
 
-        wFecha = %Char(InDate:IsoO);
+        wFecha = %Char(InDate:*Iso0);
 
         Return wFecha;
     end-Proc;

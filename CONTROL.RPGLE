@@ -1,13 +1,16 @@
 **free
 
+    ctl-opt Copyright('Bancolombia - Natalia Restrepo Gutierrez');
+    ctl-opt nomain;
+
     /copy COPY
 
     dcl-Proc PrEntrada Export;
         dcl-pi *n;
-            InNombre like(wNombreT);
-            InId like(wIdT);
+            InNombre like(wNombreT) CONST;
+            InId like(wIdT) CONST;
             OutMsgId like(wMsgIdT);
-        end_pi;
+        end-pi;
 
         //- Structures
 
