@@ -36,3 +36,27 @@
         Return wTiempo;
 
     end-Proc;
+
+    dcl-Proc FnObtenerMensaje Export;
+        dcl-pi *n like(wMsgIdT);
+            InSqlState like(wSqlStateT) Const;
+        end-pi;
+
+        //- Variables
+
+        dcl-s wMsgId like(wMsgIdT);
+
+        //- Process
+
+        SELECT;
+            WHEN InSqlState='00000';
+                wMsgId='LNS000';
+            WHEN InSqlState='42704';
+                wMsgId='LN9516';
+            OTHER;
+                wMsgId='LBK0021';
+        ENDSL;
+
+        Return wMsgId;
+
+    end-Proc;

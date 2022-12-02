@@ -36,3 +36,7 @@
         parId like (wIdT) Const;
         parMsgId like (wMsgIdT);
     end-pr;
+
+    dcl-pr FnObtenerMensaje like(wMsgIdT);
+        parMsgId like(wMsgIdT) Const;
+    end-pr;
